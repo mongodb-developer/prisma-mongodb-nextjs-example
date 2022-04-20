@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma from '../../../lib/prisma'
 
-
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
   const postId = req.query.id
 
@@ -19,7 +18,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
 // GET /api/post/:id
 async function handleGET(postId, res) {
   const post = await prisma.post.findUnique({
-    where: { id: Number(postId) },
+    where: { id: postId },
     include: { author: true },
   })
   res.json(post)
@@ -28,7 +27,7 @@ async function handleGET(postId, res) {
 // DELETE /api/post/:id
 async function handleDELETE(postId, res) {
   const post = await prisma.post.delete({
-    where: { id: Number(postId) },
+    where: { id: postId },
   })
   res.json(post)
 }

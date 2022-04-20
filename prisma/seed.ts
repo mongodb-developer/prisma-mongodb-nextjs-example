@@ -4,44 +4,44 @@ const prisma = new PrismaClient()
 
 const userData: Prisma.UserCreateInput[] = [
   {
-    name: 'Alice',
-    email: 'alice@prisma.io',
+    name: 'Jesse',
+    email: 'jesse@mongodb.com',
     posts: {
       create: [
         {
-          title: 'Join the Prisma Slack',
-          content: 'https://slack.prisma.io',
+          title: 'Join the MongoDB Community',
+          content: 'https://community.mongodb.com/',
           published: true,
         },
       ],
     },
   },
   {
-    name: 'Nilu',
-    email: 'nilu@prisma.io',
+    name: 'Mira',
+    email: 'mira@mongodb.com',
     posts: {
       create: [
         {
-          title: 'Follow Prisma on Twitter',
-          content: 'https://www.twitter.com/prisma',
+          title: 'Follow MongoDB on Twitter',
+          content: 'https://www.twitter.com/mongodb',
           published: true,
         },
       ],
     },
   },
   {
-    name: 'Mahmoud',
-    email: 'mahmoud@prisma.io',
+    name: 'Mike',
+    email: 'mike@mongodb.com',
     posts: {
       create: [
         {
-          title: 'Ask a question about Prisma on GitHub',
-          content: 'https://www.github.com/prisma/prisma/discussions',
+          title: 'We have a podcast!',
+          content: 'https://podcasts.mongodb.com/',
           published: true,
         },
         {
-          title: 'Prisma on YouTube',
-          content: 'https://pris.ly/youtube',
+          title: 'MongoDB on YouTube',
+          content: 'https://www.youtube.com/c/MongoDBofficial',
         },
       ],
     },

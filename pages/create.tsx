@@ -80,6 +80,7 @@ const Draft: React.FC = () => {
           background: #ececec;
           border: 0;
           padding: 1rem 2rem;
+          cursor: pointer;
         }
 
         .back {
