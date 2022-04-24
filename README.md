@@ -2,6 +2,8 @@
 
 This example shows how to implement a **fullstack app in TypeScript with [Next.js](https://nextjs.org/), [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/), and [Prisma Client](https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client)**. It uses a MongoDB Atlas database with some initial dummy data.
 
+> Original source code: [prisma/prisma-examples](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-nextjs-api-routes)
+
 ## Getting started
 
 ### 1. Download example and install dependencies
